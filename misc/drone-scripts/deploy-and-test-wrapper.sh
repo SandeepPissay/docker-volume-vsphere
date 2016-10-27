@@ -39,7 +39,7 @@ USER=root
 . ./misc/scripts/commands.sh
 . ./misc/drone-scripts/cleanup.sh
 . ./misc/drone-scripts/dump_log.sh
-
+ls -laR /root
 $SCP ./misc/drone-scripts/lock.sh $ESX:/tmp/
 
 # Unlock performed in stop_build in cleanup.sh
