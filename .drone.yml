@@ -45,6 +45,7 @@ build:
       - GOVC_PASSWORD=$$CI_VMWARE_ESX_PASS
       - GOVC_INSECURE=1
       - GOVC_URL=$$CI_ESX_IP
+      - SSH_KEY_OPT=-i /root/ssh/id_rsa
     commands:
       - export VM1=`govc vm.ip photon.ga.vmfs`
       - export VM2=`govc vm.ip Ubuntu.1404.vmfs`
